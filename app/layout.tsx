@@ -23,8 +23,8 @@ export default function RootLayout({children,}: { children: React.ReactNode; }) 
             <meta property="og:title" content="Portfolio"/>
             <meta property="og:description" content="A portfolio website"/>
             <title>Portfolio</title>
-            <link rel="icon" href="../public/images/favicon.jpeg" type="image/x-icon"/>
-            <link rel="shortcut icon" href="../public/images/favicon.jpeg" type="image/x-icon"/>
+            <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+            <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
         </head>
         <body className={`bg-black`}>
         {children}

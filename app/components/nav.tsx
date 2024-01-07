@@ -30,13 +30,16 @@ export const Navigation: React.FC = () => {
                             height={100}
                             className="rounded-full"
                         />
-                        <h2 className="pl-4 z-10 text-xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
-                            Dhruv Barad
-                        </h2>
+                        <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
+                            <h2 className="pl-4 z-10 text-xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
+                                Dhruv Barad
+                            </h2>
+                        </Link>
+
                     </div>
                     <div className="flex justify-between gap-8">
                         <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            About
+                        About
                         </Link>
                         <Link href="/projects" className="duration-200 text-zinc-400 hover:text-zinc-100">
                             Projects
