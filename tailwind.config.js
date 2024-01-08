@@ -3,9 +3,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./app/**/*.{js,ts,jsx,tsx}",
-        "./mdx-components.tsx",
-        "content/**/*.mdx",
+        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
 
     theme: {
@@ -37,10 +37,10 @@ module.exports = {
                     "radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
             },
             animation: {
-                "fade-in": "fade-in 3s ease-in-out forwards",
-                title: "title 3s ease-out forwards",
-                "fade-left": "fade-left 3s ease-in-out forwards",
-                "fade-right": "fade-right 3s ease-in-out forwards",
+                "fade-in": "fade-in 1s ease-in-out forwards",
+                title: "title 2s ease-out forwards",
+                "fade-left": "fade-left 2s ease-in-out forwards",
+                "fade-right": "fade-right 2s ease-in-out forwards",
             },
             keyframes: {
                 "fade-in": {

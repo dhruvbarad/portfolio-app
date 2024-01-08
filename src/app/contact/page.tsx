@@ -1,7 +1,7 @@
 "use client";
 import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
-import Page from "@/app/components/example";
+import Page from "@/src/app/components/example";
 
 const socials = [
     {

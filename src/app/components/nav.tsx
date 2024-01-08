@@ -2,8 +2,17 @@
 import Link from "next/link";
 import React, {useEffect, useRef, useState} from "react";
 import Image from "next/image";
+import {FileText} from "lucide-react";
 
 export const Navigation: React.FC = () => {
+    const resumeClick = () => {
+        const link = document.createElement("a");
+        link.href = "docs/resume.pdf";
+        link.download = "Dhruv_Barad_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     const ref = useRef<HTMLElement>(null);
     const [isIntersecting, setIntersecting] = useState(true);
 
@@ -39,7 +48,7 @@ export const Navigation: React.FC = () => {
                     </div>
                     <div className="flex justify-between gap-8">
                         <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
-                        About
+                            About
                         </Link>
                         <Link href="/projects" className="duration-200 text-zinc-400 hover:text-zinc-100">
                             Projects
@@ -50,6 +59,8 @@ export const Navigation: React.FC = () => {
                         <Link href="/contact" className="duration-200 text-zinc-400 hover:text-zinc-100">
                             Contact
                         </Link>
+                        <FileText onClick={resumeClick} size={20}
+                                  className="duration-200 text-zinc-400 hover:text-zinc-100"/>
                     </div>
                 </div>
             </div>

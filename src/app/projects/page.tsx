@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {FolderGit} from "lucide-react";
-import Page from "@/app/components/example";
+import Page from "@/src/app/components/example";
 
 const projects = [
     {
