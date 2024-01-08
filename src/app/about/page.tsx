@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {Navigation} from "@/app/components/nav";
+import {Navigation} from "@/app/components/Nav";
 import Skills from "@/app/components/Skills";
 import CardsContainer from "@/app/components/CardsContainer";
 import {FolderGit, GraduationCap} from "lucide-react";

@@ -2,7 +2,7 @@
 import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
 import CardsContainer from "@/app/components/CardsContainer";
-import {Navigation} from "@/app/components/nav";
+import {Navigation} from "@/app/components/Nav";
 
 const socials = [
     {
