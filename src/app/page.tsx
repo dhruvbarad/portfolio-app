@@ -1,5 +1,5 @@
 import React from "react";
-import {Navigation} from "src/app/components/nav";
+import {Navigation} from "@/app/components/nav";
 
 export default function Home() {
     return (

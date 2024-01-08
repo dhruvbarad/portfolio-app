@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {FolderGit} from "lucide-react";
-import Page from "@/src/app/components/example";
+import Example from "@/app/components/example";
 
 const projects = [
     {
@@ -17,8 +17,8 @@ const projects = [
         handle: "Portfolio website",
     },
 ];
-export default async function Example() {
+export default async function Projects() {
     return (
-        <Page array={projects} header="Projects"/>
+        <Example array={projects} header="Projects"/>
     );
 }

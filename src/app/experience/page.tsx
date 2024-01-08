@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Page from "@/src/app/components/example";
+import Example from "@/app/components/example";
 
-export default async function Example() {
+export default async function Experience() {
     return (
-        <Page array={[]} header="Projects"/>
+        <Example array={[]} header="Projects"/>
     );
 }

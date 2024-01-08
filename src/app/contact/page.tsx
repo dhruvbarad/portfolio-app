@@ -1,7 +1,7 @@
 "use client";
 import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
-import Page from "@/src/app/components/example";
+import Example from "@/app/components/example";
 
 const socials = [
     {
@@ -24,8 +24,8 @@ const socials = [
     },
 ];
 
-export default async function Example() {
+export default async function Contact() {
     return (
-        <Page array={socials} header="Contact"/>
+        <Example array={socials} header="Contact"/>
     );
 }

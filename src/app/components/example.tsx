@@ -1,7 +1,7 @@
-import {Navigation} from "@/src/app/components/nav";
-import {Card} from "@/src/app/components/card";
 import Link from "next/link";
 import React from "react";
+import {Navigation} from "@/app/components/nav";
+import {Card} from "@/app/components/card";
 
 export interface PageProps {
     array: any[];
