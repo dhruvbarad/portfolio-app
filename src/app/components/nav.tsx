@@ -37,16 +37,16 @@ export const Navigation: React.FC = () => {
                         </Link>
                     </div>
                     <div className="flex flex-row items-center">
-                        <Link href="/about" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        <Link href="/about" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             About
                         </Link>
-                        <Link href="/projects" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        <Link href="/projects" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Projects
                         </Link>
-                        <Link href="/contact" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        <Link href="/contact" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Contact
                         </Link>
-                        <Link href="" onClick={resumeClick} className="duration-200 text-zinc-400 hover:text-zinc-100">
+                        <Link href="" onClick={resumeClick} className="text-lg duration-200 text-zinc-400 hover:text-zinc-100">
                             Resume
                         </Link>
                     </div>

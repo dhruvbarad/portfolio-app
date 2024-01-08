@@ -1,31 +1,23 @@
 "use client";
-import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
-import Example from "@/app/components/example";
+import {Navigation} from "@/app/components/nav";
+import Skills from "@/app/components/skills";
 
-const socials = [
-    {
-        icon: <Mail size={20}/>,
-        href: "mailto:dbarad302@gmail.com",
-        label: "Email",
-        handle: "dbarad302@gmail.com",
-    },
-    {
-        icon: <Github size={20}/>,
-        href: "https://github.com/dhruvbarad",
-        label: "GitHub",
-        handle: "dhruvbarad",
-    },
-    {
-        icon: <Linkedin size={20}/>,
-        href: "https://linkedin.com/in/dhruv-barad",
-        label: "LinkedIn",
-        handle: "dhruv-barad",
-    },
+const languages = [
+    "Java", "Python", "C/C++", "JavaScript", "TypeScript", "C#"
+];
+
+const frameworks = [
+    "React.js", "Next.js"
 ];
 
 export default async function About() {
     return (
-        <Example array={socials} header="Contact"/>
+        <div>
+            <Navigation/>
+            <Skills array={languages} header="Languages"/>
+            <Skills array={frameworks} header="Frameworks"/>
+            <Skills array={languages} header="Languages"/>
+        </div>
     );
 }
