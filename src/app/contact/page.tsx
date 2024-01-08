@@ -1,7 +1,8 @@
 "use client";
 import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
-import Example from "@/app/components/example";
+import CardsContainer from "@/app/components/CardsContainer";
+import {Navigation} from "@/app/components/nav";
 
 const socials = [
     {
@@ -26,6 +27,9 @@ const socials = [
 
 export default async function Contact() {
     return (
-        <Example array={socials} header="Contact"/>
+        <div>
+            <Navigation/>
+            <CardsContainer array={socials} header="Contact"/>
+        </div>
     );
 }
