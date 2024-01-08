@@ -27,36 +27,35 @@ export const Navigation: React.FC = () => {
     }, []);
 
     return (
-        <header ref={ref}>
+        <nav ref={ref}>
             <div
-                className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b  ${isIntersecting ? "bg-zinc-900/0 border-transparent" : "bg-zinc-900/500  border-zinc-800 "}`}>
-                <div className="container flex flex-row items-center justify-between p-6 mx-auto">
+                className={`mt-0 duration-200 border-b ${isIntersecting ? "bg-zinc-900/0 border-transparent" : "bg-zinc-900/500  border-zinc-800"}`}>
+                <div className="container flex flex-col sm:flex-row items-center justify-between p-6 mx-auto">
                     <div className="flex items-center">
                         <Image
                             src="/images/me.jpeg"
                             alt="Logo"
                             width={120}
                             height={100}
-                            className="rounded-full"
+                            className="rounded-full mb-4 sm:mb-0 sm:mr-4"
                         />
                         <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            <h2 className="pl-4 z-10 text-xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
+                            <h2 className="text-xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
                                 Dhruv Barad
                             </h2>
                         </Link>
-
                     </div>
-                    <div className="flex justify-between gap-8">
-                        <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
+                    <div className="flex flex-row items-center">
+                        <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             About
                         </Link>
-                        <Link href="/projects" className="duration-200 text-zinc-400 hover:text-zinc-100">
+                        <Link href="/projects" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Projects
                         </Link>
-                        <Link href="/experience" className="duration-200 text-zinc-400 hover:text-zinc-100">
+                        <Link href="/experience" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Experience
                         </Link>
-                        <Link href="/contact" className="duration-200 text-zinc-400 hover:text-zinc-100">
+                        <Link href="/contact" className="duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Contact
                         </Link>
                         <FileText onClick={resumeClick} size={20}
@@ -64,6 +63,6 @@ export const Navigation: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </header>
+        </nav>
     );
 };
