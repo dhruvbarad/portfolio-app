@@ -29,7 +29,15 @@ export default async function Contact() {
     return (
         <div>
             <Navigation/>
-            <CardsContainer array={socials} header="Contact"/>
+            <div className="mt-4 flex flex-col justify-center items-center animate-fade-in">
+                <div className="mt-8">
+                    <h1 className="text-3xl text-transparent bg-white font-display bg-clip-text">
+                        Contact
+                    </h1>
+                </div>
+                <hr className="mt-4 w-96"></hr>
+                <CardsContainer array={socials} header="Contact"/>
+            </div>
         </div>
     );
 }

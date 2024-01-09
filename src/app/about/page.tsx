@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import {Navigation} from "@/app/components/Nav";
-import Skills from "@/app/components/Skills";
 import CardsContainer from "@/app/components/CardsContainer";
-import {FolderGit, GraduationCap} from "lucide-react";
+import {GraduationCap} from "lucide-react";
+import Skills from "@/app/components/Skills";
 
 const languages = [
     "Java", "Python", "HTML", "CSS", "JavaScript", "TypeScript", "C/C++", "C#", "SQL"
@@ -36,7 +36,7 @@ export default async function About() {
     return (
         <div>
             <Navigation/>
-            <div className="mt-4 container flex flex-col justify-center items-center animate-fade-in">
+            <div className="mt-4 flex flex-col justify-center items-center animate-fade-in">
                 <div className="mt-8">
                     <h1 className="text-3xl text-transparent bg-white font-display bg-clip-text">
                         Education
@@ -44,8 +44,6 @@ export default async function About() {
                 </div>
                 <hr className="mt-4 w-96"></hr>
                 <CardsContainer array={education} header="Hello"/>
-            </div>
-            <div className="mt-4 container flex flex-col justify-center items-center animate-fade-in">
                 <div className="mt-8">
                     <h1 className="text-3xl text-transparent bg-white font-display bg-clip-text">
                         Skills

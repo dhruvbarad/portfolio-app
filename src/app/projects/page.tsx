@@ -22,7 +22,15 @@ export default async function Projects() {
     return (
         <div>
             <Navigation/>
-            <CardsContainer array={projects} header="Projects"/>
+            <div className="mt-4 flex flex-col justify-center items-center animate-fade-in">
+                <div className="mt-8">
+                    <h1 className="text-3xl text-transparent bg-white font-display bg-clip-text">
+                        Projects
+                    </h1>
+                </div>
+                <hr className="mt-4 w-96"></hr>
+                <CardsContainer array={projects} header="Projects"/>
+            </div>
         </div>
     );
 }
