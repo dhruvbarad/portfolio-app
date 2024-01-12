@@ -1,27 +1,28 @@
-import {Card} from "@/app/components/Card";
-import React from "react";
-import {PageProps} from "@/app/components/CardsContainer";
+import SkillsContainer from "@/app/components/SkillsContainer";
 
-export default async function Skills(props: PageProps) {
+const languages = [
+    "Java", "Python", "HTML", "CSS", "JavaScript", "TypeScript", "C/C++", "C#", "SQL"
+];
+
+const frameworks = [
+    "Node.js", "Express.js", "React.js", "Next.js", "Bootstrap", "TailwindCSS"
+];
+
+const other = [
+    "GitHub", "Bitbucket", "Agile/Scrum", "Waterfall", "Firebase", "Docker"
+];
+export default async function Skills() {
     return (
-        <div className="flex flex-col items-center justify-center animate-fade-in">
-            <div className="mt-8 text-center">
-                <h1 className="text-2xl text-transparent bg-white font-display bg-clip-text">
-                    {props.header}
-                </h1>
+        <div className="skills-component mt-4 mb-16 flex flex-col justify-center items-center animate-fade-in">
+            <div className="mt-16">
+                <p className="text-3xl text-transparent bg-white font-display bg-clip-text">
+                    Skills
+                </p>
             </div>
-            <div className="mt-8 gap-8 flex flex-wrap justify-center">
-                {props.array.map((item) => (
-                    <Card key={props.array.indexOf(item) + item.length}>
-                        <div className="pt-4 pb-4 p-6 flex flex-col items-center duration-700 group">
-                            <div className="flex flex-col items-center">
-                                <span
-                                    className="text-lg font-medium duration-150 text-zinc-200 group-hover:text-white font-display">{item}</span>
-                            </div>
-                        </div>
-                    </Card>
-                ))}
-            </div>
+            <hr className="mt-4 w-96"></hr>
+            <SkillsContainer array={languages} header="Languages" />
+            <SkillsContainer array={frameworks} header="Frameworks/Libraries" />
+            <SkillsContainer array={other} header="Other" />
         </div>
     );
 }

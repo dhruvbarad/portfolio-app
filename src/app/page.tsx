@@ -1,28 +1,38 @@
 import React from "react";
 import {Navigation} from "@/app/components/Nav";
+import About from "@/app/components/About";
+import Projects from "@/app/components/Projects";
+import Contact from "@/app/components/Contact";
+import Education from "@/app/components/Education";
+import Experience from "@/app/components/Experience";
 
 export default function Home() {
     return (
         <div>
             <Navigation/>
-            <div className="mt-16 flex flex-col items-center justify-center">
+            <div className="mt-16 mb-8 flex flex-col items-center justify-center">
                 <div
                     className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
-                <h1 className="text-5xl text-transparent duration-500 bg-white font-display bg-clip-text animate-title">
+                <h1 className="text-3xl text-transparent duration-500 bg-white font-display bg-clip-text animate-title">
                     Hello! I'm Dhruv
                 </h1>
                 <div
                     className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
                 <div className="mt-8 text-center">
-                    <h1 className="text-lg text-zinc-500 animate-fade-in">
+                    <p className="text-xl text-zinc-500 animate-fade-in">
                         Welcome to my portfolio.
-                    </h1>
-                    <p className="text-lg text-zinc-500 animate-fade-in">
+                    </p>
+                    <p className="text-xl text-zinc-500 animate-fade-in">
                         I am a passionate Computer Science undergraduate with a focus on Software Engineering and Web
                         Development.
                     </p>
                 </div>
             </div>
+            <About/>
+            <Education/>
+            <Experience/>
+            <Projects/>
+            <Contact/>
         </div>
 
     );

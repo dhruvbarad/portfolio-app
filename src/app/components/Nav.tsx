@@ -1,6 +1,7 @@
 "use client";
+import { Link as ScrollingLink } from 'react-scroll';
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import React, {useEffect, useRef, useState} from "react";
 
 export const Navigation: React.FC = () => {
     const resumeClick = () => {
@@ -26,27 +27,37 @@ export const Navigation: React.FC = () => {
 
     return (
         <nav ref={ref}>
-            <div
-                className={`mt-0 duration-200 border-b ${isIntersecting ? "bg-zinc-900/0 border-transparent" : "bg-zinc-900/500  border-zinc-800"}`}>
+            <div className={`mt-0 duration-200 border-b bg-zinc-900/0 border-transparent`}>
                 <div className="container flex flex-col sm:flex-row items-center justify-between p-6 mx-auto">
                     <div className="flex items-center">
                         <Link href="/" className="duration-200 text-zinc-400 hover:text-zinc-100">
-                            <h2 className="text-4xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
+                            <p className="text-4xl text-transparent duration-500 bg-white font-display whitespace-nowrap bg-clip-text">
                                 Dhruv Barad
-                            </h2>
+                            </p>
                         </Link>
                     </div>
                     <div className="flex flex-row items-center">
-                        <Link href="/about" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
-                            About
-                        </Link>
-                        <Link href="/projects" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        <ScrollingLink to="about-component" smooth={true} duration={500}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">About
+                        </ScrollingLink>
+                        <ScrollingLink to="education-component" smooth={true} duration={500}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                            Education
+                        </ScrollingLink>
+                        <ScrollingLink to="experience-component" smooth={true} duration={500}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                            Experience
+                        </ScrollingLink>
+                        <ScrollingLink to="projects-component" smooth={true} duration={500}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Projects
-                        </Link>
-                        <Link href="/contact" className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        </ScrollingLink>
+                        <ScrollingLink to="contact-component" smooth={true} duration={500}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                             Contact
-                        </Link>
-                        <Link href="" onClick={resumeClick} className="text-lg duration-200 text-zinc-400 hover:text-zinc-100">
+                        </ScrollingLink>
+                        <Link href="" onClick={resumeClick}
+                            className="text-lg duration-200 text-zinc-400 hover:text-zinc-100">
                             Resume
                         </Link>
                     </div>
