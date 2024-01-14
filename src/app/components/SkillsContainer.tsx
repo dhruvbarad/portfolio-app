@@ -4,7 +4,7 @@ import { PageProps } from "@/app/components/CardsContainer";
 
 export default async function SkillsContainer(props: PageProps) {
     return (
-        <div className="flex flex-col items-center justify-center animate-fade-in">
+        <div className="flex flex-col items-center justify-center">
             <div className="mt-8 text-center">
                 <h1 className="text-2xl text-transparent bg-white font-display bg-clip-text">
                     {props.header}

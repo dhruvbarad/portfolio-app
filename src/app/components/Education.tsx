@@ -19,7 +19,7 @@ const education = [
 
 export default async function Education() {
     return (
-        <div className="education-component mt-4 mb-16 flex flex-col justify-center items-center animate-fade-in">
+        <div className="education-component mb-16 flex flex-col justify-center items-center animate-fade-in">
             <CardsContainer array={education} header="Education" />
         </div>
     );

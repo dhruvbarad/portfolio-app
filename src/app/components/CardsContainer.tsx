@@ -15,8 +15,8 @@ export default function CardsContainer(props: PageProps) {
                     {props.header}
                 </h1>
             </div>
-            <hr className="mt-4 w-96"></hr>
-            <div className="mt-16 container gap-8 flex flex-wrap justify-center animate-fade-in">
+            <hr className="mt-4 w-96 max-w-full"></hr>
+            <div className="mt-16 container gap-8 flex flex-wrap justify-center">
                 {props.array.map((item) => (
                     <Card key={Math.random()}>
                         <Link href={item.href} target="_blank"

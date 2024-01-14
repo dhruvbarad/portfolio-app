@@ -19,7 +19,7 @@ const experience = [
 
 export default async function Experience() {
     return (
-        <div className="experience-component mt-4 mb-16 flex flex-col justify-center items-center animate-fade-in">
+        <div className="experience-component mb-16 flex flex-col justify-center items-center animate-fade-in">
             <CardsContainer array={experience} header="Experience" />
         </div>
     );

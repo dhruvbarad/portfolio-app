@@ -25,7 +25,7 @@ const socials = [
 
 export default async function Contact() {
     return (
-        <div className="contact-component mt-4 mb-16 flex flex-col justify-center items-center animate-fade-in">
+        <div className="contact-component mb-16 flex flex-col justify-center items-center animate-fade-in">
             <CardsContainer array={socials} header="Contact" />
         </div>
     );
