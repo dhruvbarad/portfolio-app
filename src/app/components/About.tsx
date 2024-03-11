@@ -2,13 +2,16 @@ import React from "react";
 
 export default async function About() {
     return (
-        <div className="about-component mb-16 flex flex-col justify-center items-center animate-fade-in">
-            <div className="mt-16">
-                <p className="text-3xl text-transparent bg-white font-display bg-clip-text">
-                    About
+        <div className="about-component flex flex-col justify-center items-center animate-fade-in">
+            <div className="mt-8 text-center">
+                <p className="text-xl text-zinc-400">
+                    Welcome to my portfolio.
+                </p>
+                <p className="text-xl text-zinc-400">
+                    I am a passionate Computer Science undergraduate with a focus on Software Engineering and Web
+                    Development.
                 </p>
             </div>
-            <hr className="mt-4 w-96"></hr>
         </div>
     );
 }

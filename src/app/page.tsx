@@ -5,6 +5,7 @@ import Projects from "@/app/components/Projects";
 import Contact from "@/app/components/Contact";
 import Education from "@/app/components/Education";
 import Experience from "@/app/components/Experience";
+import Skills from "@/app/components/Skills";
 
 export default function Home() {
     return (
@@ -18,20 +19,12 @@ export default function Home() {
                 </h1>
                 <div
                     className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-                <div className="mt-8 text-center">
-                    <p className="text-xl text-zinc-500 animate-fade-in">
-                        Welcome to my portfolio.
-                    </p>
-                    <p className="text-xl text-zinc-500 animate-fade-in">
-                        I am a passionate Computer Science undergraduate with a focus on Software Engineering and Web
-                        Development.
-                    </p>
-                </div>
             </div>
             <About />
             <Education />
             <Experience />
             <Projects />
+            <Skills />
             <Contact />
         </>
     );

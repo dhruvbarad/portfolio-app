@@ -1,26 +1,28 @@
 import { GraduationCap } from "lucide-react";
 import React from "react";
-import CardsContainer from "@/app/components/CardsContainer";
+import TimelineCards from "@/app/components/TimelineCards";
 
 const education = [
     {
         icon: <GraduationCap size={20} />,
         href: "https://umn.edu",
-        label: "Majoring in Computer Science. Graduating May 2024",
-        handle: "University of Minnesota",
+        description: "Majoring in Computer Science.",
+        name: "University of Minnesota",
+        date: "September 2021 - May 2024"
     },
     {
         icon: <GraduationCap size={20} />,
         href: "https://nhcc.edu",
-        label: "Finished some general education courses and some CS courses.",
-        handle: "North Hennepin Community College",
+        description: "Finished some general education courses and some CS courses.",
+        name: "North Hennepin Community College",
+        date: "January 2020 - August 2021"
     },
 ];
 
 export default async function Education() {
     return (
-        <div className="education-component mb-16 flex flex-col justify-center items-center animate-fade-in">
-            <CardsContainer array={education} header="Education" />
+        <div className="education-component flex flex-col justify-center items-center animate-fade-in">
+            <TimelineCards array={education} header="Education" />
         </div>
     );
 }

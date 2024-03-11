@@ -6,20 +6,20 @@ const socials = [
     {
         icon: <Mail size={20} />,
         href: "mailto:dbarad302@gmail.com",
-        label: "Email",
-        handle: "dbarad302@gmail.com",
+        name: "Email",
+        description: "dbarad302@gmail.com",
     },
     {
         icon: <Github size={20} />,
         href: "https://github.com/dhruvbarad",
-        label: "GitHub",
-        handle: "dhruvbarad",
+        name: "GitHub",
+        description: "dhruvbarad",
     },
     {
         icon: <Linkedin size={20} />,
         href: "https://linkedin.com/in/dhruv-barad",
-        label: "LinkedIn",
-        handle: "dhruv-barad",
+        name: "LinkedIn",
+        description: "dhruv-barad",
     },
 ];
 

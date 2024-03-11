@@ -1,6 +1,6 @@
 "use client";
 import { Link as ScrollingLink } from 'react-scroll';
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 export const Navigation: React.FC = () => {
