@@ -21,10 +21,10 @@ export default function Home() {
                     className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
             </div>
             <About />
-            <Education />
             <Experience />
-            <Projects />
+            <Education />
             <Skills />
+            <Projects />
             <Contact />
         </>
     );

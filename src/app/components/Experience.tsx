@@ -1,6 +1,5 @@
 import { Briefcase } from "lucide-react";
 import React from "react";
-import CardsContainer from "@/app/components/CardsContainer";
 import TimelineCards from "@/app/components/TimelineCards";
 
 const experience = [
@@ -8,7 +7,7 @@ const experience = [
         icon: <Briefcase size={20} />,
         href: "https://home.pearsonvue.com",
         description: "Software Development Intern",
-        name: "PearsonVUE",
+        name: "Pearson VUE",
         date: "June 2023 - Present"
     },
     {

@@ -2,15 +2,19 @@ import SkillsContainer from "@/app/components/SkillsContainer";
 import React from "react";
 
 const languages = [
-    "Java", "Python", "HTML", "CSS", "JavaScript", "TypeScript", "C/C++", "C#", "SQL"
+    "Python", "Java", "HTML", "CSS", "JavaScript", "TypeScript", "C/C++", "C#"
 ];
 
 const frameworks = [
-    "Node.js", "Express.js", "React.js", "Flask", "Next.js", "Bootstrap", "TailwindCSS"
+    "Node.js", "Express.js", "React.js", "Bootstrap", "TailwindCSS", "Next.js", "Flask", "Numpy", "Pandas", "PySpark", "Gradle"
 ];
 
+const databases = [
+    "SQL", "NoSQL", "PostgreSQL", "MySQL", "MongoDB", "Azure", "Firebase"
+]
+
 const other = [
-    "GitHub", "Bitbucket", "Agile/Scrum", "Waterfall", "Firebase", "Docker"
+    "GitHub", "Bitbucket", "TeamCity", "Agile", "Scrum", "Waterfall", "JUnit", "Google Testing"
 ];
 export default async function Skills() {
     return (
@@ -23,6 +27,7 @@ export default async function Skills() {
             <hr className="mb-4 w-96"></hr>
             <SkillsContainer array={languages} header="Languages"/>
             <SkillsContainer array={frameworks} header="Frameworks/Libraries"/>
+            <SkillsContainer array={databases} header="Database/Cloud"/>
             <SkillsContainer array={other} header="Other"/>
         </div>
     );
