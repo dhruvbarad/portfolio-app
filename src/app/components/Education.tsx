@@ -9,14 +9,7 @@ const education = [
         description: "Bachelor of Science in Computer Science.",
         name: "University of Minnesota",
         date: "September 2021 - May 2024"
-    },
-    {
-        icon: <GraduationCap size={20} />,
-        href: "https://nhcc.edu",
-        description: "",
-        name: "North Hennepin Community College",
-        date: "January 2020 - August 2021"
-    },
+    }
 ];
 
 export default async function Education() {
