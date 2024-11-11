@@ -5,14 +5,14 @@ import CardsContainer from "@/app/components/CardsContainer";
 const projects = [
     {
         icon: <FolderGit size={20} />,
-        href: "https://comic-app-p165.onrender.com",
-        description: "A React app. More details available on my GitHub.",
-        name: "Marvel & Star Wars Explorer",
+        href: "https://comic-app-pink.vercel.app",
+        description: "A Next.js app. More details available on my GitHub.",
+        name: "Comic Explorer",
     },
     {
         icon: <FolderGit size={20} />,
         href: "/",
-        description: "A NextJS app. More details on my GitHub.",
+        description: "A Next.js app. More details on my GitHub.",
         name: "Portfolio website",
     },
 ];
