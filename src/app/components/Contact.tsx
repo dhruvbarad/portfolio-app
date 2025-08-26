@@ -1,22 +1,22 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import {SiGithub, SiGmail, SiLinkedin} from "react-icons/si";
 import React from "react";
 import CardsContainer from "@/app/components/CardsContainer";
 
 const socials = [
     {
-        icon: <Mail size={20} />,
+        icon: <SiGmail size={20}/>,
         href: "mailto:dbarad302@gmail.com",
         name: "Email",
         description: "dbarad302@gmail.com",
     },
     {
-        icon: <Github size={20} />,
+        icon: <SiGithub size={20}/>,
         href: "https://github.com/dhruvbarad",
         name: "GitHub",
         description: "dhruvbarad",
     },
     {
-        icon: <Linkedin size={20} />,
+        icon: <SiLinkedin size={20}/>,
         href: "https://linkedin.com/in/dhruv-barad",
         name: "LinkedIn",
         description: "dhruv-barad",
@@ -26,7 +26,7 @@ const socials = [
 export default async function Contact() {
     return (
         <div className="contact-component mb-16 flex flex-col justify-center items-center animate-fade-in">
-            <CardsContainer array={socials} header="Contact" />
+            <CardsContainer array={socials} header="Contact"/>
         </div>
     );
 }

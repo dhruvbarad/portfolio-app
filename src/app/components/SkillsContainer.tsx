@@ -1,6 +1,6 @@
-import { Card } from "@/app/components/Card";
+import {Card} from "@/app/components/Card";
 import React from "react";
-import { CardsProps } from "@/app/components/CardsContainer";
+import {CardsProps} from "@/app/components/CardsContainer";
 
 export default async function SkillsContainer(props: CardsProps) {
     return (
@@ -15,7 +15,8 @@ export default async function SkillsContainer(props: CardsProps) {
                     <Card key={item.name}>
                         <div className="pt-4 pb-4 p-6 flex flex-col items-center group">
                             <div className="flex flex-col items-center">
-                                <span className="text-lg font-medium duration-150 text-zinc-200 font-display">{item}</span>
+                                <span
+                                    className="text-lg font-medium duration-150 text-zinc-200 font-display">{item}</span>
                             </div>
                         </div>
                     </Card>

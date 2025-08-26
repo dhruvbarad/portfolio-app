@@ -12,28 +12,30 @@ export default function TimelineCards(props: CardsProps) {
                 </h1>
             </div>
             <hr className="mb-16 w-96"></hr>
-            <div className="container gap-4 flex flex-col justify-center">
+            <div
+                className="container flex flex-row gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-zinc-900">
                 {props.array.map((item, index) => (
-                    <>
-                        <Card key={item.description}>
+                    <div className="flex flex-row">
+                        <Card>
                             <Link href={item.href} target="_blank"
-                                  className="p-10 flex flex-col items-center gap-4 group">
-                            <span
-                                className="relative flex items-center justify-center w-12 h-12 text-sm duration-500 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200">{item.icon}
-                            </span>{" "}
-                                <div className="flex flex-col items-center">
+                                  className="p-10 flex flex-row items-center gap-4 group min-w-[350px]">
+                                <span
+                                    className="relative flex items-center justify-center w-12 h-12 text-sm duration-500 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200">{item.icon}
+                                </span>
+                                <div className="flex flex-col items-start">
                                     <span
-                                    className="text-xl text-center duration-200 text-zinc-200 font-display">{item.name}</span>
+                                        className="text-xl text-left duration-200 text-zinc-200 font-display">{item.name}</span>
                                     <span
-                                        className="mt-4 text-lg text-center duration-200 text-zinc-200 font-display">{item.date}</span>
+                                        className="mt-4 text-lg text-left duration-200 text-zinc-200 font-display">{item.date}</span>
                                     <span
-                                        className="mt-4 text-lg text-center duration-200 text-zinc-400">{item.description}</span>
+                                        className="mt-4 text-lg text-left duration-200 text-zinc-400">{item.description}</span>
                                 </div>
                             </Link>
                         </Card>
                         {index !== props.array.length - 1 && (
-                            <div className="mx-auto h-[7rem] w-[0.1rem] text-transparent bg-white"></div>)}
-                    </>
+                            <div className="h-[0.1rem] w-[7rem] mx-4 text-transparent bg-white self-center"></div>
+                        )}
+                    </div>
                 ))}
             </div>
         </div>

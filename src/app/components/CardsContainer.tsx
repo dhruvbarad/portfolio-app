@@ -21,9 +21,9 @@ export default function CardsContainer(props: CardsProps) {
                     <Card key={item.description}>
                         <Link href={item.href} target="_blank"
                               className="p-10 flex flex-col items-center gap-4 group">
-                            <span
-                                className="relative flex items-center justify-center w-12 h-12 text-sm duration-500 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200">{item.icon}
-                            </span>{" "}
+                            <div className="relative flex items-center justify-center w-12 h-12 text-sm duration-500 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200">
+                                {item.icon}
+                            </div>
                             <div className="flex flex-col items-center">
                                 <span
                                     className="text-xl text-center duration-200 text-zinc-200 font-display">{item.name}</span>
