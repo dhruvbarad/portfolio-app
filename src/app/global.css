@@ -1,5 +1,4 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss";
 @tailwind utilities;
 
 @layer base {
@@ -14,5 +13,5 @@
     ::-webkit-scrollbar-thumb {
         background: #2c3034;
     }
-} 
+}
 

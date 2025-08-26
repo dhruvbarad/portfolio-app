@@ -15,7 +15,7 @@ export default function TimelineCards(props: CardsProps) {
             <div
                 className="container flex flex-row gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-zinc-900">
                 {props.array.map((item, index) => (
-                    <div className="flex flex-row">
+                    <div key={index} className="flex flex-row">
                         <Card>
                             <Link href={item.href} target="_blank"
                                   className="p-10 flex flex-row items-center gap-4 group min-w-[350px]">

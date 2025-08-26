@@ -11,8 +11,8 @@ export default async function SkillsContainer(props: CardsProps) {
                 </h1>
             </div>
             <div className="container gap-4 flex flex-wrap justify-center">
-                {props.array.map((item) => (
-                    <Card key={item.name}>
+                {props.array.map((item, index) => (
+                    <Card key={index}>
                         <div className="pt-4 pb-4 p-6 flex flex-col items-center group">
                             <div className="flex flex-col items-center">
                                 <span
