@@ -2,20 +2,21 @@ import SkillsContainer from "@/app/components/SkillsContainer";
 import React from "react";
 
 const languages = [
-    "Python", "Java", "HTML", "CSS", "JavaScript", "TypeScript", "C/C++", "C#"
+    "Java", "Python", "TypeScript", "JavaScript", "SQL"
 ];
 
-const frameworks = [
-    "Node.js", "Express.js", "React.js", "Bootstrap", "TailwindCSS", "Next.js", "Flask", "Numpy", "Pandas", "PySpark", "Gradle"
+const backend = [
+    "Spring Boot", "Hibernate/JPA", "REST", "Service-Oriented Architecture", "Event-Driven Architecture", "Microservices"
 ];
 
-const databases = [
-    "SQL", "NoSQL", "PostgreSQL", "MySQL", "MongoDB", "Azure", "Firebase"
-]
-
-const other = [
-    "GitHub", "Bitbucket", "TeamCity", "Agile", "Scrum", "Waterfall", "JUnit", "Google Testing"
+const cloudData = [
+    "Azure", "Azure Service Bus", "Kubernetes", "Docker", "Terraform", "PostgreSQL", "MySQL", "MongoDB", "NoSQL"
 ];
+
+const tooling = [
+    "Git", "GitHub", "Bitbucket", "JUnit", "Postman", "Maven", "Gradle", "Jira", "Confluence", "Agile", "Scrum"
+];
+
 export default async function Skills() {
     return (
         <div className="skills-component flex flex-col justify-center items-center animate-fade-in">
@@ -26,9 +27,9 @@ export default async function Skills() {
             </div>
             <hr className="mb-4 w-96"></hr>
             <SkillsContainer array={languages} header="Languages"/>
-            <SkillsContainer array={frameworks} header="Frameworks/Libraries"/>
-            <SkillsContainer array={databases} header="Database/Cloud"/>
-            <SkillsContainer array={other} header="Other"/>
+            <SkillsContainer array={backend} header="Backend / Architecture"/>
+            <SkillsContainer array={cloudData} header="Cloud / Messaging / Database"/>
+            <SkillsContainer array={tooling} header="Tools / Methodology"/>
         </div>
     );
 }

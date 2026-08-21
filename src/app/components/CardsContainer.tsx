@@ -15,7 +15,7 @@ export default function CardsContainer(props: CardsProps) {
                     {props.header}
                 </h1>
             </div>
-            <hr className="mb-16 w-96"></hr>
+            <hr className="mb-8 w-96"></hr>
             <div className="container gap-4 flex flex-wrap justify-center">
                 {props.array.map((item, index) => (
                     <Card key={index}>

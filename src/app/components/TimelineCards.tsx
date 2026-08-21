@@ -6,16 +6,16 @@ import {CardsProps} from "@/app/components/CardsContainer";
 export default function TimelineCards(props: CardsProps) {
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="mt-8 mb-8">
+            <div className="mt-8 mb-4">
                 <h1 className="text-3xl text-transparent bg-white font-display bg-clip-text">
                     {props.header}
                 </h1>
             </div>
-            <hr className="mb-16 w-96"></hr>
+            <hr className="mb-8 w-96"></hr>
             <div
-                className="container flex flex-row gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-zinc-900">
+                className="container flex flex-col gap-4">
                 {props.array.map((item, index) => (
-                    <div key={index} className="flex flex-row">
+                    <div key={index} className="flex flex-col">
                         <Card>
                             <Link href={item.href} target="_blank"
                                   className="p-10 flex flex-row items-center gap-4 group min-w-[350px]">
@@ -33,7 +33,7 @@ export default function TimelineCards(props: CardsProps) {
                             </Link>
                         </Card>
                         {index !== props.array.length - 1 && (
-                            <div className="h-[0.1rem] w-[7rem] mx-4 text-transparent bg-white self-center"></div>
+                            <div className="h-[7rem] w-[0.1rem] my-4 text-transparent bg-white self-center"></div>
                         )}
                     </div>
                 ))}

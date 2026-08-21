@@ -6,15 +6,22 @@ const experience = [
     {
         icon: <Briefcase size={20}/>,
         href: "https://pearsonvue.com",
-        description: "Associate Software Developer",
-        name: "Pearson VUE",
-        date: "January 2025 - Present"
+        description: "Software Engineer II",
+        name: "Pearson",
+        date: "August 2026 - Present"
     },
     {
         icon: <Briefcase size={20}/>,
         href: "https://pearsonvue.com",
-        description: "Software Development Intern",
-        name: "Pearson VUE",
+        description: "Software Engineer I",
+        name: "Pearson",
+        date: "January 2025 - August 2026"
+    },
+    {
+        icon: <Briefcase size={20}/>,
+        href: "https://pearsonvue.com",
+        description: "Software Engineer Intern",
+        name: "Pearson",
         date: "June 2023 - January 2025"
     },
     {
