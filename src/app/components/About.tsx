@@ -3,7 +3,7 @@ import React from "react";
 export default async function About() {
     return (
         <div className="about-component flex flex-col justify-center items-center animate-fade-in">
-            <div className="mx-40 mt-2 mb-4 text-center">
+            <div className="mx-40 mt-4 mb-4 text-center">
                 <p className="text-xl text-zinc-400">
                     I am a software engineer with 3+ years of experience building and scaling backend systems for a
                     high-traffic assessment platform that supports over 1,000,000 exams each year. I specialize in
