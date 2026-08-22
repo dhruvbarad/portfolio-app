@@ -1,5 +1,5 @@
 "use client";
-import { Link as ScrollingLink } from 'react-scroll';
+import {Link as ScrollingLink} from 'react-scroll';
 import React from "react";
 import Link from "next/link";
 
@@ -25,26 +25,26 @@ export const Navigation: React.FC = () => {
                 </div>
                 <div className="flex flex-wrap items-center">
                     <ScrollingLink to="about-component" smooth={true} duration={500}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">About
-                    </ScrollingLink>
-                    <ScrollingLink to="education-component" smooth={true} duration={500}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
-                        Education
+                                   className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">About
                     </ScrollingLink>
                     <ScrollingLink to="experience-component" smooth={true} duration={500}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                                   className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                         Experience
                     </ScrollingLink>
+                    <ScrollingLink to="education-component" smooth={true} duration={500}
+                                   className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                        Education
+                    </ScrollingLink>
                     <ScrollingLink to="projects-component" smooth={true} duration={500}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                                   className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                         Projects
                     </ScrollingLink>
                     <ScrollingLink to="contact-component" smooth={true} duration={500}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
+                                   className="text-lg duration-200 text-zinc-400 hover:text-zinc-100 mr-4">
                         Contact
                     </ScrollingLink>
                     <Link href="" onClick={resumeClick}
-                        className="text-lg duration-200 text-zinc-400 hover:text-zinc-100">
+                          className="text-lg duration-200 text-zinc-400 hover:text-zinc-100">
                         Resume
                     </Link>
                 </div>
