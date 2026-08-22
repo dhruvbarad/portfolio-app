@@ -1,4 +1,5 @@
-import {SiGithub, SiGmail, SiLinkedin} from "react-icons/si";
+import {SiGithub, SiGmail} from "react-icons/si";
+import {FaLinkedin} from "react-icons/fa";
 import React from "react";
 import CardsContainer from "@/app/components/CardsContainer";
 
@@ -16,7 +17,7 @@ const socials = [
         description: "dhruvbarad",
     },
     {
-        icon: <SiLinkedin size={20}/>,
+        icon: <FaLinkedin size={20}/>,
         href: "https://linkedin.com/in/dhruv-barad",
         name: "LinkedIn",
         description: "dhruv-barad",
